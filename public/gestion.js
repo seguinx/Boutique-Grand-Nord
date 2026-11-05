@@ -11,7 +11,7 @@ async function chargerCommandes() {
     const li = document.createElement('li');
     li.textContent = `#${c.id} · ${c.client} : ${c.quantite} × `
       + `${c.produit} · ${c.livraison} = ${c.total.toFixed(2)} $`;
-    liste.prepend(li);
+    liste.appendChild(li);
   }
 }
 
